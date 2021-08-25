@@ -3,9 +3,15 @@ import logo from './logo.svg';
 import { Counter } from './features/counter/Counter';
 import './App.css';
 
+import { BrowserRouter, Link } from 'react-router-dom'
+
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
+        <Link to="/home">home</Link>
+        <Link to="/about">about</Link>
+      </BrowserRouter>
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Counter />
